@@ -1,0 +1,355 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+    <!-- title -->
+    <title>single page application</title>
+    <!-- logo -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.jfif" />
+    <!-- font-awesome library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap style -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- custome styel -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <!-- navbar started -->
+
+    <nav class="navbar sticky-top navbar-expand-lg" id="myNav">
+        <div class="container-fluid">
+            <!-- navbar brand -->
+            <div class="mt-1 ms-1" style="width: 34px; height: 34px;">
+                <a class="navbar-brand" href="#">                                
+                    <img src="images/logo.jfif" style="max-width: 100%; max-height: 100%;">
+                    <span class="ms-2" style="color: rgb(166, 23, 126);"><i>Creative Design</i></span>                               
+                </a>
+            </div>
+
+            <!-- collapse button on small screen -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navitems"
+                aria-controls="navitems" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- nav links -->
+            <div class="collapse navbar-collapse" id="navitems">
+                <div class="navbar-nav ms-auto">
+                    <a role="button" id="nav-home" type="button" class="btn nav-link" href="#home">Home</a>
+                    <a role="button" id="nav-about" type="button" class="btn nav-link" href="#about">About Us</a>
+                    <a role="button" id="nav-image" type="button" class="btn nav-link" href="#image">Images</a>
+                    <a role="button" id="nav-service" type="button" class="btn nav-link" href="#service">Services</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- navbar ended -->
+
+    <!-- main div started -->
+
+    <div class="main" data-bs-spy="scroll" data-bs-target="#myNav" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+
+        <!-- home started -->
+            <div id="home" class="home-page">
+                <img class="home-img" src="images/home_background.jpg" alt="home page image">
+                <div class="home-h-txt text-center">
+                    <h1>HALIFAX WORDPRESS & WEB APP DEVELOPMENT</h1>
+                </div>
+                <div class="home-p-txt text-center"> 
+                    Specializing in custom theme development. If you're a business seeking a web presence or are looking to hire
+                </div>
+                <div class="contact-btn text-center">
+                    <input type="button" class="btn btn-light" value="Contact me" onclick="callContactUs()">
+                </div>
+            </div>
+        <!-- home ended -->
+
+        <!-- about us started -->
+
+            <div id="about" class="about-us">
+                <div class="text-center about-heading">
+                    <h1>About Us</h1>
+                </div>
+                <div class="ms-4">
+                    <div class="about-txt-1">
+                        Nearly every organization will need to become a tech company in order to compete tomorrow. Yes, even yours. we are on a mission to help companies develop competitiveness and agility using the software. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        <div class="text-center mission-heading" style="background-color: rgb(36, 36, 34);">Our Mission</div>
+                    </div>
+                    <div class="about-img-1">
+                        <img style="height: 100%; width: 100%;" src="images/about.jpg" alt="about page image 1">
+                    </div>
+                    <div class="about-txt-1 mt-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus integer feugiat scelerisque varius morbi enim nunc. Vestibulum sed arcu non odio euismod lacinia at quis risus. Vel risus commodo viverra maecenas accumsan lacus. Ac odio tempor orci dapibus. Odio facilisis mauris sit amet massa vitae tortor condimentum lacinia. In nisl nisi scelerisque eu ultrices vitae auctor.
+                        <div class="text-center mission-heading" style="background-color: rgb(36, 36, 34);">Our Vision</div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- about us ended -->
+
+        <!-- image slider started -->
+
+            <div id="image" class="img-slider" style="background-color: rgb(93, 96, 93);">
+                <!-- slider container -->
+                <div class="slideshow-container" style="max-height: 100%;">
+
+                    <div class="" style="display: flex; flex-flow: row nowrap;">
+                        <div class="mySlides w-30 my-5"> 
+                            <img src="images/image_0.jpg" alt="image 1 of image slider">
+                        </div>
+                    
+                        <div class="mySlides w-30 my-5">
+                            <img src="images/image_1.jpg" alt="image 2 of image slider">
+                        </div>
+                    
+                        <div class="mySlides w-30 my-5">
+                            <img src="images/image_2.jpg" alt="image 3 of image slider">
+                        </div>
+
+                        <div class="mySlides w-30 my-5">
+                            <img src="images/image_3.jpg" alt="image 3 of image slider">
+                        </div>
+
+                        <!-- control links -->
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+                    </div>
+                </div>
+            </div>
+
+        <!-- image slider ended -->
+
+        <!-- Contact us started -->
+
+        <div id="contactUs" class="contact-form bg-secondary pb-5">
+            <div class="container">
+                <!-- form started -->
+                <form id="myForm">
+                    <!-- heading -->
+                    <h1 class="text-center py-5" style="color: white;">Get in touch</h1>
+
+                    <div class="row">
+                        <!-- input for full name -->
+                        <div class="col-12 col-md-4"> 
+                            <div class="mb-3">
+                                <label for="nameIp" class="mb-1 fs-5"><span style="color: red;">*</span> &nbsp;Full Name</label>
+                                <input type="text" class="form-control shadow-none" id="nameIp" name="nameIp"
+                                    required>
+                                <strong id="nameError" class="text-danger font-wight-bold"></strong>
+                            </div>
+                        </div>
+
+                        <!-- input for email -->
+                        <div class="col-12 col-md-4">
+                            <div class="mb-3">
+                                <label for="emailIp" class="mb-1 fs-5"><span style="color: red;">*</span> &nbsp;Email</label>
+                                <input type="email" class="form-control shadow-none" id="emailIp" name="emailIp"
+                                    required>
+                                <strong id="emailError" class="text-danger font-wight-bold"></strong>
+                            </div>
+                        </div>
+
+                        <!-- input for contact -->
+                        <div class="col-12 col-md-4">
+                            <div class="mb-3">
+                                <label for="contactIp" class="mb-1 fs-5"><span style="color: red;">*</span> &nbsp;Contact Number</label>
+                                <input type="number" class="form-control shadow-none" id="contactIp" name="contactIp"
+                                    required>
+                                <strong id="contactError" class="text-danger font-wight-bold"></strong>      
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- input for message -->
+                    <div class="mb-4">
+                        <label for="msgIp" class="mb-1 fs-5"><span style="color: red;">*</span> &nbsp;Message</label>
+                        <textarea class="form-control" rows="10" cols="1" placeholder="Leave a message here" id="msgIp" required></textarea>
+                    </div>
+
+                    <!-- submit buttton -->
+                    <div class="text-center">
+                        <input type="submit" role="button" class="btn bg-light" id="liveToastBtn" value="Submit">
+                    </div>
+                </form>
+                <!-- form ended -->
+            </div>
+        </div>
+
+
+        <!-- Toast message on form submit -->
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <h6>Toast Message</h6>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="toast" aria-label="Close" style="margin-left: 170px;"></button>
+                </div>
+                <div class="toast-body">
+                    Your query submitted successfully.
+                </div>
+            </div>
+        </div>
+
+    <!-- Contact us ended -->
+
+    <!-- service div started  -->
+        <div id="service" class="services" style="align-items: center; margin-top: 100px; margin-bottom: 100px;" >
+
+            <div class="row">
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-auto mb-5">
+                    <!-- card 1 -->
+                    <div class="card" style="width: 15em;">
+                        <div class="text-center">
+                            <img src="" data-src="images/HTML5.png" class="card-img-top card-img mt-4 lazy-load" style="height: 160px; width: 200px;" alt="image of html">
+                        </div>
+                        <div class="card-body">
+                            <div class="text-center card-link">
+                                <button class="btn btn-primary service-link" onclick="toHtml()">Learn HTML</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-auto mb-5">
+                    <!-- card 2 -->
+                    <div class="card" style="width: 15em;">
+                        <div class="text-center">
+                            <img src="" data-src="images/css.png" class="card-img-top card-img mt-4 lazy-load" style="height: 160px; width: 200px;" alt="image of html">
+                        </div>
+                        <div class="card-body">
+                            <div class="text-center card-link">
+                                <button class="btn btn-primary service-link" onclick="toCss()">Learn CSS 3</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-auto mb-5">
+                    <!-- card 3 -->
+                    <div class="card" style="width: 15em;">
+                        <div class="text-center">
+                            <img src="" data-src="images/java.png" class="card-img-top card-img mt-4 lazy-load" style="height: 160px; width: 200px;" alt="image of java">
+                        </div>
+                        <div class="card-body">
+                            <div class="text-center card-link">
+                                <button class="btn btn-primary service-link" onclick="toJava()">Learn JAVA</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-auto mb-5">
+                    <!-- card 4 -->
+                    <div class="card" style="width: 15em;">
+                        <div class="text-center">
+                            <img src="" data-src="images/C-Sharp.jpg" class="card-img-top card-img mt-4 lazy-load" style="height: 160px; width: 200px;" alt="image of java">
+                        </div>
+                        <div class="card-body">
+                            <div class="text-center card-link">
+                                <button class="btn btn-primary service-link" onclick="toCsharp()">Learn C#</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-auto mb-5">
+                    <!-- card 5 -->
+                    <div class="card" style="width: 15em;">
+                        <div class="text-center">
+                            <img src="" data-src="images/react.png" class="card-img-top card-img mt-4 lazy-load" style="height: 160px; width: 200px;" alt="image of java">
+                        </div>
+                        <div class="card-body">
+                            <div class="text-center card-link">
+                                <button class="btn btn-primary service-link" onclick="toReact()">Learn React</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-auto mb-5">
+                    <!-- card 6 -->
+                    <div class="card" style="width: 15em;">
+                        <div class="text-center">
+                            <img src="" data-src="images/python.png" class="card-img-top card-img mt-4 lazy-load" style="height: 160px; width: 200px;" alt="image of java">
+                        </div>
+                        <div class="card-body">
+                            <div class="text-center card-link">
+                                <button class="btn btn-primary service-link" onclick="toPython()">Learn React</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                        
+            </div>
+        </div>
+
+    <!-- service div ended  -->
+
+    </div>
+
+    <!-- main div ended -->
+
+    <!-- footer started -->
+
+        <footer class="footer">
+            <div id="navbar" class="nav-bar">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a role="button" id="nav-home" type="button" class="btn" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a role="button" id="nav-about" type="button" class="btn" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a role="button" id="nav-image" type="button" class="btn" href="#image">Images</a>
+                </li>
+                <li class="nav-item">
+                    <a role="button" id="nav-service" type="button" class="btn" href="#service">Services</a>
+                </li>
+            </ul>
+            </div>
+    
+        <!-- social link started -->
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" target="_blank">
+                        <i class="fa-brands fa-github fa-2x clr" style="color: gray;"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" target="_blank">
+                        <i class="fa-brands fa-linkedin fa-2x clr" style="color: gray;"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fa-brands fa-twitter fa-2x clr" style="color: gray;"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fa-brands fa-youtube fa-2x clr" style="color: gray;"></i>
+                    </a>
+                </li>
+            </ul>
+         <!-- social link ended -->
+
+        </footer>
+
+      <!-- footer ended -->
+      
+    <!-- custome script -->
+        <script src="js/script.js"></script>
+
+    </body>
+</html>

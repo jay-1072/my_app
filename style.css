@@ -1,0 +1,562 @@
+* {
+    box-sizing: border-box;
+}
+
+a, a.btn {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+nav.navbar {
+    background-color: rgb(245, 231, 242);
+}
+
+button[type='button'] {
+    font-size: x-large;
+}
+
+button.nav-link:hover {
+    border: 2px solid gray;
+}
+
+/* home page style */
+
+div.home-page {
+    position: relative;
+    width: 100%;
+}
+
+div.home-h-txt {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    padding-left: 23%;
+    padding-right: 23%;
+}
+
+div.home-h-txt h1 {
+    color: white;
+    font-size: 4vw;
+}
+
+div.home-p-txt {
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    color: white;
+    font-size: 30px;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+div.contact-btn {
+    position: absolute;
+    top: 72%;
+    width: 100%;
+}
+
+/* about page style */
+
+div.about-us {
+    position: relative;
+    height: 662px;
+}
+
+div.about-heading {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+div.about-txt-1 {
+    float: left;
+    width: 60%;
+    height: 60%; 
+    font-size: 20px;
+    padding-top: 4%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 3%;
+    position: relative;
+    background-color: rgb(94, 96, 93);
+    color: white;
+}
+
+div.about-img-1 {
+    float: right; 
+    width: 40%;
+    height: 40%;
+}
+
+div.mission-heading {
+    position: absolute; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    margin-left: 0; 
+    margin-top: 2%; 
+    font-size: 30px;
+}
+
+/* image page style */
+div.slideshow-container {
+    position: relative;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    padding: 10px;
+    color: white;
+    font-size: 2em;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+div.mySlides img {
+    max-width: 100%; 
+    height: 350px;
+    width: 500px;
+}
+
+/* sevices page style */
+
+div.services {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+div.card {
+    width: 19vw;
+}
+
+img.card-img {
+    height: 28vh; 
+    width: 18vw;
+}
+
+/* footer page style */
+footer {
+    background-color: rgb(245, 231, 242);
+}
+
+@media screen and (min-width:320px) and (max-width:425px) {
+
+    div.home-h-txt {
+        position: absolute;
+        top: 25%;
+        width: 100%;
+        padding-left: 23%;
+        padding-right: 23%;
+    }
+
+    div.home-p-txt {
+        position: absolute;
+        width: 100%;
+        font-size: 10px;
+        color: white;
+        top: 45%;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    div.contact-btn {
+        top: 62%;
+    }
+
+    div.contact-btn input {
+        padding: 4px;
+        font-size: 11px;
+    }
+
+    .card-link, button.service-link {
+        font-size: 15px;
+        padding: 1px;
+        width: 50%;
+        margin: auto;
+    }
+
+    div.card {
+        border: none;
+        min-width: 100%;
+    }
+
+    div.about-us {
+        position: relative;
+        height: 450px;
+    }
+
+    div.about-heading {
+        padding: 7px;
+    }
+
+    div.about-txt-1 {
+        float: left;
+        width: 45%;
+        height: 20vh; 
+        font-size: 10px;
+        padding-top: 4%;
+        padding-left: 1%;
+        padding-right: 1%;
+        position: relative;
+        line-height: normal;
+    }
+
+    div.about-img-1 {
+        float: right; 
+        width: 55%; 
+        height: 20vh;
+    }
+
+    div.mission-heading {
+        position: absolute; 
+        width: 100%; 
+        margin-left: 0; 
+        margin-top: 0; 
+        font-size: 13px;
+    }
+
+    div.mySlides {
+        margin: auto;
+    }
+
+    div.mySlides img {
+        max-width: 100%; 
+        height: 90px;
+        width: 97px;
+    }
+
+    div.slideshow-container {
+        position: relative;
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 45%;
+        padding: 4px;
+        color: white;
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width:426px) and (max-width:768px) {
+
+    div.home-h-txt {
+        position: absolute;
+        top: 25%;
+        width: 100%;
+        padding-left: 23%;
+        padding-right: 23%;
+    }
+
+    div.home-p-txt {
+        position: absolute;
+        width: 100%;
+        font-size: 15px;
+        color: white;
+        top: 45%;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    div.contact-btn {
+        top: 60%;
+        font-size: 15px;
+    }
+
+    div.contact-btn input {
+        padding: 5px;
+    }
+
+    .card-link, button.service-link {
+        font-size: 15px;
+        padding: 2px;
+        width: 70%;
+        margin: auto;
+    }
+
+    div.card {
+        border: none;
+    }
+
+    div.about-us {
+        position: relative;
+        height: 450px;
+    }
+
+    div.about-heading {
+        padding: 7px;
+    }
+
+    div.about-txt-1 {
+        float: left;
+        width: 45%;
+        height: 20vh; 
+        font-size: 12px;
+        padding-top: 4%;
+        padding-left: 1%;
+        padding-right: 1%;
+        position: relative;
+        line-height: normal;
+    }
+
+    div.about-img-1 {
+        float: right; 
+        width: 55%; 
+        height: 20vh;
+    }
+
+    div.mission-heading {
+        position: absolute; 
+        width: 100%; 
+        margin-left: 0; 
+        margin-top: 0; 
+        font-size: 18px;
+    }
+
+    div.mySlides {
+        margin: auto;
+    }
+
+    div.mySlides img {
+        max-width: 100%; 
+        height: 150px;
+        width: 200px;
+    }
+
+    div.slideshow-container {
+        position: relative;
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 45%;
+        padding: 4px;
+        color: white;
+        font-size: 1.5em;
+    }
+
+    .next {
+        right: 0;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1025px) {
+
+    div.home-h-txt {
+        position: absolute;
+        top: 25%;
+        width: 100%;
+        padding-left: 25%;
+        padding-right: 23%;
+    }
+
+    div.home-p-txt {
+        position: absolute;
+        width: 100%;
+        font-size: 15px;
+        color: white;
+        top: 45%;
+        padding-left: 27%;
+        padding-right: 23%;
+    }
+
+    div.contact-btn {
+        top: 60%;
+        font-size: 9px;
+    }
+
+    div.contact-btn input {
+        padding: 7px;
+    }
+
+    .card-link, button.service-link {
+        font-size: 18px;
+        padding: 3px;
+        width: 80%;
+        margin: auto;
+    }
+
+    div.card {
+        border: none;
+    }
+
+    div.about-us {
+        position: relative;
+        height: 480px;
+    }
+
+    div.about-heading {
+        padding: 10px;
+    }
+
+    div.about-txt-1 {
+        float: left;
+        width: 60%;
+        height: 20vh; 
+        font-size: 16px;
+        padding-top: 4%;
+        padding-left: 1%;
+        padding-right: 1%;
+        position: relative;
+        line-height: normal;
+    }
+
+    div.about-img-1 {
+        float: right; 
+        width: 40%; 
+        height: 20vh;
+    }
+
+    div.mission-heading {
+        position: absolute; 
+        width: 100%; 
+        margin-left: 0; 
+        margin-top: 0; 
+        font-size: 25px;
+    }
+
+    div.mySlides {
+        margin: auto;
+    }
+
+    div.mySlides img {
+        max-width: 100%; 
+        height: 220px;
+        width: 280px;
+    }
+
+    div.slideshow-container {
+        position: relative;
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 45%;
+        padding: 5px;
+        color: white;
+        font-size: 2em;
+    }
+
+    .next {
+        right: 0;
+    }
+}
+
+@media screen and (min-width:1025px) {
+
+    div.home-h-txt {
+        position: absolute;
+        top: 25%;
+        width: 100%;
+        padding-left: 25%;
+        padding-right: 23%;
+    }
+
+    div.home-p-txt {
+        position: absolute;
+        width: 100%;
+        font-size: 25px;
+        color: white;
+        top: 45%;
+        padding-left: 28%;
+        padding-right: 28%;
+    }
+
+    div.contact-btn {
+        top: 60%;
+    }
+
+    div.contact-btn input {
+        padding: 7px;
+        font-size: 25px;
+    }
+
+    .card-link, button.service-link {
+        font-size: 18px;
+        padding: 3px;
+        width: 80%;
+        margin: auto;
+    }
+
+    div.card {
+        border: none;
+    }
+
+    div.about-us {
+        position: relative;
+        height: 600px;
+    }
+
+    div.about-heading {
+        padding: 10px;
+    }
+
+    div.about-txt-1 {
+        float: left;
+        width: 60%;
+        height: 25vh; 
+        font-size: 20px;
+        padding-top: 4%;
+        padding-left: 1%;
+        padding-right: 1%;
+        position: relative;
+        line-height: normal;
+    }
+
+    div.about-img-1 {
+        float: right; 
+        width: 40%; 
+        height: 25vh;
+    }
+
+    div.mission-heading {
+        position: absolute; 
+        width: 100%; 
+        margin-left: 0; 
+        margin-top: 0; 
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    div.mySlides {
+        margin: auto;
+    }
+
+    div.mySlides img {
+        max-width: 100%; 
+        height: 300px;
+        width: 420px;
+    }
+
+    div.slideshow-container {
+        position: relative;
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 45%;
+        padding: 5px;
+        color: white;
+        font-size: 2em;
+    }
+
+    .next {
+        right: 0;
+    }
+}
