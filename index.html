@@ -13,13 +13,11 @@
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- bootstrap style -->
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- bootstrap script -->
-    <script src="bootstrap.bundle.min.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <!-- custome styel -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -106,19 +104,23 @@
 
                     <div class="" style="display: flex; flex-flow: row nowrap;">
                         <div class="mySlides w-30 my-5"> 
-                            <img src="images/image_0.jpg" alt="image 1 of image slider">
+                            <img src="" data-src="images/image_0.jpg" class="lazy-load" alt="image 1 of image slider">
                         </div>
                     
                         <div class="mySlides w-30 my-5">
-                            <img src="images/image_1.jpg" alt="image 2 of image slider">
+                            <img src="" data-src="images/image_1.jpg" class="lazy-load" alt="image 2 of image slider">
                         </div>
                     
                         <div class="mySlides w-30 my-5">
-                            <img src="images/image_2.jpg" alt="image 3 of image slider">
+                            <img src="" data-src="images/image_2.jpg" class="lazy-load" alt="image 3 of image slider">
                         </div>
 
                         <div class="mySlides w-30 my-5">
-                            <img src="images/image_3.jpg" alt="image 3 of image slider">
+                            <img src="" data-src="images/image_3.jpg" class="lazy-load" alt="image 3 of image slider">
+                        </div>
+
+                        <div class="mySlides w-30 my-5">
+                            <img src="" data-src="images/image_4.jpg" class="lazy-load" alt="image 4 of image slider">
                         </div>
 
                         <!-- control links -->
@@ -144,8 +146,7 @@
                         <div class="col-12 col-md-4"> 
                             <div class="mb-3">
                                 <label for="nameIp" class="mb-1 fs-5"><span style="color: red;">*</span> &nbsp;Full Name</label>
-                                <input type="text" class="form-control shadow-none" id="nameIp" name="nameIp"
-                                    required>
+                                <input type="text" class="form-control shadow-none" id="nameIp" name="nameIp">
                                 <strong id="nameError" class="text-danger font-wight-bold"></strong>
                             </div>
                         </div>
@@ -154,8 +155,7 @@
                         <div class="col-12 col-md-4">
                             <div class="mb-3">
                                 <label for="emailIp" class="mb-1 fs-5"><span style="color: red;">*</span> &nbsp;Email</label>
-                                <input type="email" class="form-control shadow-none" id="emailIp" name="emailIp"
-                                    required>
+                                <input type="email" class="form-control shadow-none" id="emailIp" name="emailIp">
                                 <strong id="emailError" class="text-danger font-wight-bold"></strong>
                             </div>
                         </div>
@@ -164,8 +164,7 @@
                         <div class="col-12 col-md-4">
                             <div class="mb-3">
                                 <label for="contactIp" class="mb-1 fs-5"><span style="color: red;">*</span> &nbsp;Contact Number</label>
-                                <input type="number" class="form-control shadow-none" id="contactIp" name="contactIp"
-                                    required>
+                                <input type="number" class="form-control shadow-none" id="contactIp" name="contactIp">
                                 <strong id="contactError" class="text-danger font-wight-bold"></strong>      
                             </div>
                         </div>
@@ -175,7 +174,8 @@
                     <!-- input for message -->
                     <div class="mb-4">
                         <label for="msgIp" class="mb-1 fs-5"><span style="color: red;">*</span> &nbsp;Message</label>
-                        <textarea class="form-control" rows="10" cols="1" placeholder="Leave a message here" id="msgIp" required></textarea>
+                        <textarea class="form-control" rows="10" cols="1" placeholder="Leave a message here" id="msgIp" name="msgIp"></textarea>
+                        <strong id="messageError" class="text-danger font-wight-bold"></strong>
                     </div>
 
                     <!-- submit buttton -->
@@ -351,7 +351,7 @@
       <!-- footer ended -->
       
     <!-- custome script -->
-        <script src="script.js"></script>
+        <script src="js/script.js"></script>
 
     </body>
 </html>

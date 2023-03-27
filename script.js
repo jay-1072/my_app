@@ -17,13 +17,13 @@ function showSlides(n) {
     let slides = document.getElementsByClassName("mySlides");
 
     // if your n (slideIndex) is become grater than Slides array length than set slideIndex to 1.
-    if (n > 3) {
+    if (n > 4) {
         slideIndex = 2;
     }
 
     // if your n (slideIndex) is become negative then set it to slides length
     if (n < 2) {
-        slideIndex = 3;
+        slideIndex = 4;
     }
 
     for (let i = 0; i < slides.length; i++) {
@@ -76,6 +76,7 @@ const contactRegex = /^[0-9]{10}$/;
 const orig_name_ip = document.getElementById("nameIp");
 const orig_email_ip = document.getElementById("emailIp");
 const orig_contact_ip = document.getElementById("contactIp");
+const orig_message_ip = document.getElementById("msgIp");
 
 
 // Function for client query
@@ -86,14 +87,50 @@ function sendMsg(e) {
     const name = document.getElementById("nameIp").value.replace(/\s+/g, '').trim();;
     const email = document.getElementById("emailIp").value;
     const contact = document.getElementById("contactIp").value;
+    const message = document.getElementById("msgIp").value.trim();
+    console.log(message);
 
     document.getElementById('nameError').innerHTML = "";
     document.getElementById('emailError').innerHTML = "";
     document.getElementById('contactError').innerHTML = "";
+    document.getElementById('messageError').innerHTML = "";
 
     document.getElementById("nameIp").style = orig_name_ip.value;
     document.getElementById("emailIp").style = orig_email_ip.value;
     document.getElementById("contactIp").style = orig_contact_ip.value;
+    document.getElementById("msgIp").style = orig_message_ip.value;
+
+    if(flag) {
+        if(name=='') {
+            document.getElementById("nameError").innerHTML = "name is required";
+            document.getElementById("nameIp").style.border = "1px solid red";
+            flag = false;
+        }
+
+        if(email=='') {
+            document.getElementById("emailError").innerHTML = "email is required";
+            document.getElementById("emailIp").style.border = "1px solid red";
+            flag = false;
+        }
+
+        if(contact=='') {
+            document.getElementById('contactError').innerHTML = "contact number is required";
+            document.getElementById("contactIp").style.border = "1px solid red";
+            flag = false;
+        }
+
+        if(message=='') {
+            console.log(message=='');
+            document.getElementById("messageError").innerHTML = "message is required";
+            document.getElementById("msgIp").style.border = "1px solid red";
+            flag = false;
+        }
+
+        // if(!flag) {
+        //     return;
+        // }
+    }
+
 
     if (!nameRegex.test(name) && name != '') {
         document.getElementById("nameError").innerHTML = "name is Invalid";
